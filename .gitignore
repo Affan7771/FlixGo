@@ -1,0 +1,46 @@
+# ===== WordPress Core =====
+/backend/wp-admin/
+/backend/wp-includes/
+/backend/index.php
+/backend/wp-*.php
+!/backend/wp-config-sample.php
+/backend/xmlrpc.php
+/backend/.htaccess
+/backend/license.txt
+/backend/readme.html
+
+# ===== WP Content (keep custom code, ignore rest) =====
+/backend/wp-content/uploads/
+/backend/wp-content/upgrade/
+/backend/wp-content/cache/
+/backend/wp-content/backup*/
+/backend/wp-content/*.log
+/backend/wp-content/plugins/hello.php
+/backend/wp-content/plugins/akismet/
+
+# ===== Config / Secrets =====
+/backend/wp-config.php
+/backend/.env
+
+# ===== React Frontend =====
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.*.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# ===== OS / Editor junk =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ===== Logs =====
+*.log
+error_log
+debug.log
