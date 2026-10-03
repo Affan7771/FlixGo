@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/img/logo.svg'
 
 const Header = () => {
@@ -11,23 +12,19 @@ const Header = () => {
 					<div className="col-12">
 						<div className="header__content">
 							{/* <!-- header logo --> */}
-							<a href="index.html" className="header__logo">
+							<Link to="/" className="header__logo">
 								<img src={Logo} alt="logo" />
-							</a>
+							</Link>
 							{/* <!-- end header logo --> */}
 
 							{/* <!-- header nav --> */}
 							<ul className="header__nav">
-								{/* <!-- dropdown --> */}
 								<li className="header__nav-item">
-									<a className="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-
-									<ul className="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuHome">
-										<li><a href="index.html">Home slideshow bg</a></li>
-										<li><a href="index2.html">Home static bg</a></li>
-									</ul>
+									<Link className="dropdown-toggle header__nav-link" to="/">Home</Link>
 								</li>
-								{/* <!-- end dropdown --> */}
+								<li className="header__nav-item">
+									<Link to="/about" className="header__nav-link">About</Link>
+								</li>
 
 								{/* <!-- dropdown --> */}
 								<li className="header__nav-item">
